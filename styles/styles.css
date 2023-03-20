@@ -1,0 +1,36 @@
+.play-button,
+.stop-button,
+.backward-button,
+.forward-button {
+  border: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+  overflow: hidden;
+  padding-right: 70px;
+  background-color: rgba(128, 128, 128, 0);
+}
+
+.play-image {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+}
+
+.stop-image {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+}
+
+.forward-image {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+}
+
+.backward-image {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+}
