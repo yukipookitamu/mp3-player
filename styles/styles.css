@@ -34,3 +34,29 @@
   width: 70px;
   object-fit: cover;
 }
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.song-card {
+  padding: 20px;
+  box-shadow: 0 0 6px rgb(100, 100, 100);
+  border-radius: 10px;
+  border: none;
+}
+
+.title {
+  margin-bottom: 20px;
+  padding-left: 6px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  font-size: 24px;
+}

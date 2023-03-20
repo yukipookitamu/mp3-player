@@ -5,6 +5,8 @@ let stopButton = document.querySelector('.stop-button');
 let backButton = document.querySelector('.backward-button');
 let forwardButton = document.querySelector('.forward-button');
 
+let song_title = document.querySelector('.title');
+
 let song_index = 0;
 
 let songs_src = [
@@ -16,6 +18,35 @@ let songs_src = [
 ];
 
 let pause = true;
+
+
+let songs = [
+    {
+        "title": 'Heroes Tonight (feat. Johnning',
+        "artist": 'Janji',
+        "source": 'songs/heroesTonight-Janji.mp3'
+    },
+    {
+        "title": 'Mortals (feat. Laura Brehm)',
+        "artist": 'Warriyo',
+        "source": 'songs/mortals-Warriyo.mp3'
+    },
+    {
+        "title": 'On & On (feat. Daniel Levi',
+        "artist": 'Cartoon',
+        "source": 'songs/onAndOn-Cartoon.mp3'
+    },
+    {
+        "title": '',
+        "source": 'songs/weAre-JoCohen.mp3'
+    },
+    {
+        "title": '',
+        "source": 'songs/whyWeLose-Cartoon.mp3'
+    }
+];
+
+
 
 // change icon
 function changeToPause() {
@@ -32,6 +63,8 @@ window.onload=function() {
 }
 
 playButton.addEventListener("click", function() {
+
+    song_title.innerHTML = songs_src[song_index];
 
     if (pause) {
         console.log("play");
@@ -67,6 +100,8 @@ forwardButton.addEventListener("click", function() {
         player.play();
     }
 
+    song_title.innerHTML = songs_src[song_index];
+
     console.log(song_index);
 
 })
@@ -86,9 +121,10 @@ backButton.addEventListener("click", function() {
         player.play();
     }
 
+    song_title.innerHTML = songs_src[song_index];
+
     console.log(song_index);
        
-
 })
 
 stopButton.addEventListener("click", function() {

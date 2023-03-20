@@ -2,16 +2,26 @@
 <html>
   <head>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 
     <title>MP3 Player</title>
   </head>
   <body>
 
-    <button class="backward-button"><img class="backward-image" src="images/skip-backward-button.png"></button>
-    <button class="play-button"><img class="play-image" src="images/play-button.png"></button>
-    <button class="stop-button"><img class="stop-image" src="images/stop-button.png"></button>
-    <button class="forward-button"><img class="forward-image" src="images/skip-forward-button.png"></button>
+    <div class="grid">
+      <div class="song-card">
+        <div class="title">No song playing</div>
+        <div class="console">
+          <button class="backward-button"><img class="backward-image" src="images/skip-backward-button.png"></button>
+          <button class="play-button"><img class="play-image" src="images/play-button.png"></button>
+          <button class="stop-button"><img class="stop-image" src="images/stop-button.png"></button>
+          <button class="forward-button"><img class="forward-image" src="images/skip-forward-button.png"></button>
+        </div>
+      </div>
+    </div>
 
     <audio id="sound">
     </audio>
