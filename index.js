@@ -135,6 +135,11 @@ backButton.addEventListener("click", function() {
 
 stopButton.addEventListener("click", function() {
     console.log("Stopped!")
+
+    song_title.innerHTML = 'No music playing';
+
     player.pause();
+    changeToPlay();
+    song_index = 0;
     player.currentTime=0;
 })
